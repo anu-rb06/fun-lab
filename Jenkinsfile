@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/anu-rb06/fun-lab.git'
             }
         }
