@@ -1,3 +1,2 @@
 "sample text file to check webhook trigger"
-if triggered, webhook works fine 
-build success
+
