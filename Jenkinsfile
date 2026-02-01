@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/anu-rb06/fun-lab.git'
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                sh 'docker build -t funlab-image .'
+                sh 'docker build --no-cache -t funlab-image .'
             }
         }
 
