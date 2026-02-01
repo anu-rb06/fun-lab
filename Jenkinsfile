@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                sh 'docker build -t funlab-image .'
+                sh 'docker build --no-cache -t funlab-image .'
             }
         }
 
